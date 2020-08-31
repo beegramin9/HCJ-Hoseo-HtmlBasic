@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+    <h1>HTML 세계에 오신 것을 환영합니다</h1>    
+    <hr>
+    <h2>vscode icons 설치하세요 </h2>
+    <h3>open in browser 설치하고 저장하고 Alt + B 를 누르면 실행됩니다. </h3>
+    <h4>유튜브에 vscoed extension 추천 다운로드하기 
+        세번째 깃허브 사용하면 명령창 대신 바로 vscode에서 올릴 수 있어요.
+        오른쪽 미니맵
+    </h4>
+    <p>한 쪽에서 고치면 다른 쪽도 고쳐집니다.</p>
+    <p>Git 과 연동이 됩니다. </p>
+
+</body>
+</html>
