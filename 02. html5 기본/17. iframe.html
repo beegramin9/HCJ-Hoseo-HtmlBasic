@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe을 가지는 웹 페이지</title>
+    <style>
+        /* body {
+            background-color: black;
+            color: beige;
+        } */
+    </style>
+</head>
+
+<body>
+    <h3>2개의 &lt;iframe&gt;을 가집니다.</h3>
+    <iframe src="iframe1.html" width="200px" height="150px"
+        srcdoc="<html><head><body>Hello</body></head></html>"></iframe>
+    <iframe src="iframe2.html" width="200px" height="100px" srcdoc="<html><head><body>Hi
+
+    </body></head></html>"></iframe>
+
+    <h3>2개의 신문 사이트입니다. </h3>
+    <hr>
+    <iframe width="2000px" height="1500px" src="
+        http://www.etnews.com"></iframe>
+    <iframe width="2000px" height="1000px" src="
+    http://www.mk.co.kr"></iframe>
+</body>
+
+</html>
