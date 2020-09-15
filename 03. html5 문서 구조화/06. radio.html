@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스, 라디오</title>
+</head>
+
+<body>
+    <h3>먹고 싶은 것 모두 체크</h3>
+    <hr>
+    <form action="checkbox">
+        짜장면<input type="checkbox" value="1">
+        짬뽕<input type="checkbox" value="2" checked> <!-- 초기값 설정 -->
+        탕수육<input type="checkbox" value="3">
+        <input type="submit" value="제출">
+        <!-- 데이터가 여러개가 들어갈 수 있기 때문에 데이터를 하나의 값이 아니라
+    리스트/어레이로 받는다. -->
+        <!-- 그래서 값이 안 나옴 -->
+    </form>
+    <h3>먹고 싶은 것 하나만</h3>
+    <hr>
+    <form action="radio">
+        <input type="radio" name="china" value="1">짜장면<img src="./media/jajang.png"><br>
+        <input type="radio" name="china" value="2" checked>짬뽕<img src="./media/jjambbong.png"><br>
+        <input type="radio" name="china" value="3">탕수육<img src="./media/tangsuyuk.png"><br>
+        <input type="submit" value="제출">
+        <!-- 어짜피 값이 하나니까 값이 나옴 -->
+    </form>
+    <h3>먹고 싶은 음식은?</h3>
+    <hr>
+    <form action="combobox">
+        <select name="china">
+            <option value="1">짜장면</option>
+            <option value="2" selected>짬뽕</option>
+            <option value="3">탕수육</option>
+        </select>
+    </form>
+</body>
+
+</html>
