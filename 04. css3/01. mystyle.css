@@ -1,0 +1,38 @@
+
+body {
+    background-color:rgb(179, 209, 235);
+    color: black;
+}
+h2 {
+    color: blue;
+    text-shadow: 3px 3px 5px skyblue;
+}
+
+h1 {
+    color:darkred; 
+    text-align: center;
+}
+ul {
+    border-width: 1px;
+    border-style: dotted;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+p {
+    font-family: "휴먼 편지체";
+    font-size: 1em;
+    text-indent: 1em;
+}
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    
+}  
+.footer {
+    border-radius: 50px;
+    background:orange;
+}

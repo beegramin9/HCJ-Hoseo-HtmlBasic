@@ -1,0 +1,21 @@
+body {
+    background-color: paleturquoise;
+}
+hr {
+    color: black;
+    
+}
+form {
+    border-top-width: 2px;
+    border-top-color: black;
+    background-color: palevioletred;
+}
+p {
+
+    background-color: orange;
+    border-radius: 50px;
+}
+h3 {
+    text-align: center;
+    color: brown;
+}
