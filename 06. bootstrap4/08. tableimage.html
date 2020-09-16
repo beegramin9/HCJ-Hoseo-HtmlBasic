@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        th,
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <table class="table table-sm table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th class="text-primary">Rounded Corners</th>
+                    <th class="text-primary">Circle</th>
+                    <th class="text-primary">Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The .rounded class adds rounded corners to an image:</td>
+                    <td>The .rounded-circle class shapes the image to a circle:</td>
+                    <td>The .img-thumbnail class creates a thumbnail of the image:</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="200" height="150">
+                    </td>
+                    <td><img src="./img/cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre" width="200"
+                            height="150"></td>
+                    <td><img src="./img/cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="200"
+                            height="150"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Aligning images</h2>
+        <p>Use the float classes to float the image to the left or to the right:</p>
+        <img src="./img/paris.jpg" class="float-left" alt="Paris" width="304" height="236">
+        <img src="./img/paris.jpg" class="float-right" alt="Paris" width="304" height="236">
+        <br>
+        <img src="./img/paris.jpg" class="img-fluid" alt="Paris" width="50%">
+    </div>
+</body>
+
+</html>

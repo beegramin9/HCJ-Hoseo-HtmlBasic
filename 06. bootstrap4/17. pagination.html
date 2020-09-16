@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Pagination</h2>
+        <p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li
+            element and a .page-link class to each link inside li:</p>
+        <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">&lt;</a></li>
+            <!-- 첫 번째 페이지일때는 previous 버튼이 먹힐 수가 없겠지?
+            이걸 일일히 다 설정해줘야하는 게 개발의 어려운 점 -->
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <!-- 액티브시켜서 색깔 하이라이트 -->
+            <!-- 현재 액티브 된 곳에서는 href를 막아놓아야겠지 -->
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+        </ul>
+        <hr>
+        <h2>Pagination Alignment</h2>
+        <!-- Default (left-aligned) -->
+        <ul class="pagination" style="margin:20px 0">
+            <li class="page-item disabled"><a class="page-link" href="#">&lt;</a></li>
+            <!-- 첫 번째 페이지일때는 previous 버튼이 먹힐 수가 없겠지?
+            이걸 일일히 다 설정해줘야하는 게 개발의 어려운 점 -->
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <!-- 액티브시켜서 색깔 하이라이트 -->
+            <!-- 현재 액티브 된 곳에서는 href를 막아놓아야겠지 -->
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+        </ul>
+
+        <!-- Center-aligned -->
+        <ul class="pagination justify-content-center" style="margin:20px 0">
+            <li class="page-item disabled"><a class="page-link" href="#">&lt;</a></li>
+            <!-- 첫 번째 페이지일때는 previous 버튼이 먹힐 수가 없겠지?
+            이걸 일일히 다 설정해줘야하는 게 개발의 어려운 점 -->
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <!-- 액티브시켜서 색깔 하이라이트 -->
+            <!-- 현재 액티브 된 곳에서는 href를 막아놓아야겠지 -->
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+        </ul>
+
+        <!-- Right-aligned -->
+        <ul class="pagination justify-content-end" style="margin:20px 0">
+            <li class="page-item disabled"><a class="page-link" href="#">&lt;</a></li>
+            <!-- 첫 번째 페이지일때는 previous 버튼이 먹힐 수가 없겠지?
+            이걸 일일히 다 설정해줘야하는 게 개발의 어려운 점 -->
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <!-- 액티브시켜서 색깔 하이라이트 -->
+            <!-- 현재 액티브 된 곳에서는 href를 막아놓아야겠지 -->
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
