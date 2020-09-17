@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .border {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Borders</h2>
+        <p>Use the border classes to add or remove borders from an element:</p>
+        <span class="border"></span>
+        <span class="border border-0"></span>
+        <span class="border border-top-0"></span>
+        <span class="border border-right-0"></span>
+        <span class="border border-bottom-0 border-right-0"></span>
+        <span class="border border-left-0"></span>
+        <hr>
+        <div class="mx-auto bg-warning" style="width:150px">Centered<h2>Border Color</h2>
+            <!-- margin x축 auto로 centering 한다는 뜻 -->
+        </div>
+
+        <span class="border border-primary"></span>
+        <span class="border border-secondary"></span>
+        <span class="border border-success"></span>
+        <span class="border border-danger"></span>
+        <span class="border border-warning"></span>
+        <span class="border border-info"></span>
+        <span class="border border-light"></span>
+        <span class="border border-dark"></span>
+        <span class="border border-white"></span>
+
+
+        <p>어떤 요소? 여기서는 박스같은데.. 요놈의 크기를 구하래</p>
+        <div style="height:200px;background-color:#ddd">
+            <div class="h-25 bg-warning">Height 25%</div>
+            <div class="h-50 bg-warning">Height 50%</div>
+            <!-- <div class="h-75 bg-warning">Height 75%</div>
+                    <div class="h-100 bg-warning">Height 100%</div>  -->
+            <!-- <div class="mh-100 bg-warning" style="height:500px">Max Height 100%</div> -->
+        </div>
+
+
+        <h1>Spacing Utilities</h1>
+        <p>Set the spacing of an element with the {property}{sides}-{breakpoint}-{size} classes. Omit breakpoint if
+            you
+            want the padding or margin to work on all screen sizes.</p>
+        <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+        <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+        <div class="m-5 pb-5 bg-info invisible">I have a margin on all sides (3rem = 48px) and a bottom padding
+            (3rem =
+            48px)
+        </div>
+
+        <div class="row">
+            <h2>Inline Flex</h2>
+            <p>To create an inline flexbox container, use the d-inline-flex class:</p>
+            <div class="d-inline-flex p-3 bg-secondary text-white">
+                <div class="col-1 p-2 bg-info">Flex item 1</div>
+                <div class="col-1 p-2 bg-warning">Flex item 2</div>
+                <div class="col-10 p-2 bg-primary">Flex item 3</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

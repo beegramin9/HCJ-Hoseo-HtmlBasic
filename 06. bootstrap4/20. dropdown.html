@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Dropdowns</h2>
+        <div class="dropdown dropright">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item active" href="#">Link 1</a>
+                <a class="dropdown-item disabled" href="#">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item" href="#">마지막 링크</a>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <div class="dropdown dropleft">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item active" href="#">Link 1</a>
+                <a class="dropdown-item disabled" href="#">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item" href="#">마지막 링크</a>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <p>float-right 맨 끝에 붙어있어라!</p>
+        <div class="dropdown dropleft float-right">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item active" href="#">Link 1</a>
+                <a class="dropdown-item disabled" href="#">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Dropdown header</h5>
+                <a class="dropdown-item" href="#">마지막 링크</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <p>여러 버튼</p>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">여러 버튼</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+
+
+        <!-- 맨 끝 DIV -->
+    </div> <!-- 맨 끝 DIV -->
+</body>
+
+</html>
