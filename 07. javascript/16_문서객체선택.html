@@ -1,0 +1,33 @@
+<!-- 
+    div id="" 
+    div class="" 
+    처럼 태그의 속성들을 찾는 방법 / 동적으로 태그들을 바꿔치기하는 방법
+    Ex) <p id="ptag" style="backgroundcolor : red">
+        InnerHtml
+        </p>
+-->
+<!-- document.getElementById -->
+<!-- document.querySelector 하면 맨 처음 하나만 문자열로 가져옴 -->
+<!-- document.querySelectorAll 하면 전체를 Array로 가져옴 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 선택</title>
+    <script>
+        window.onload = function () {
+            let header = document.getElementById('header');
+            /* 요게 바로 자바스크립트로 태그를 동적으로 바꾸는 방법 */
+            header.style.color = 'red';
+            header.style.border = '1px solid black';
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id='header'>Title</h1>
+</body>
+
+</html>

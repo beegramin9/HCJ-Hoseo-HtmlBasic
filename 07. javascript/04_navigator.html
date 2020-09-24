@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator 객체 속성</title>
+    <script>
+        // Navigator 객체의 속성을 출력합니다.
+        let output = '';
+        output += 'appCodeName :' + navigator.appCodeName + '\n';
+        output += 'appName :' + navigator.appName + '\n';
+        output += 'appVersion :' + navigator.appVersion + '\n';
+        output += 'platform :' + navigator.platform + '\n';
+        output += 'userAgent :' + navigator.userAgent + '\n';
+        /* 웹 크롤러로 작동하면 Mozilla/5.0가 안 나옴. 사람으로 하면 나오는데
+        그때 살짝 바꿔줘야 함 */
+        console.log(output);
+        // iOS와 안드로이드의 웹 브라우저를 구분합니다.
+        if (
+            navigator.userAgent.toLowerCase().indexOf('chrome') >= 0
+            /* -1이면 없는거고 >=0 이면 어딘가에는 있다는 거고 */
+            /* 일단 소문자로 통일하고 비교해야 다 찾아낼 수 있음 */
+        ) {
+            alert('크롬 브라우저 사용');
+        }
+
+        if (
+            navigator.userAgent.toLowerCase().indexOf('iphone') >= 0 ||
+            navigator.userAgent.toLowerCase().indexOf('ipad') >= 0 ||
+            navigator.userAgent.toLowerCase().indexOf('ipod') >= 0 ||
+            navigator.userAgent.toLowerCase().indexOf('android') >= 0
+        ) {
+            alert('모바일 웹 브라우저입니다.');
+        }
+    </script>
+</head>
+
+
+<body>
+
+</body>
+
+</html>

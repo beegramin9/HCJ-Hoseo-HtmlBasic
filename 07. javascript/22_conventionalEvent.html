@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conventional Event</title>
+    <script>
+        window.onload = function () {
+            let button = document.getElementById('button');
+            /* 버튼을 먼저 찾고 그 다음에 onclick 이벤트를 연결해 주자 */
+            button.onclick = function () {
+                alert('click');
+            }
+            button.onmouseover = function () {
+                button.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button id="button">버튼</button>
+</body>
+
+</html>

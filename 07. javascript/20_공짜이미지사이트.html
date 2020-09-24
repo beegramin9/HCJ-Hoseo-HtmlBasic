@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placehold.com에서 이미지 가져오기</title>
+    <script>
+        window.onload = function () {
+            let image = document.getElementById('image');
+            /* 텍스트는 loremipsum */
+            image.src = 'http://picsum.photos/300/300';
+            /* 이런 거 있으면 사진 다운로드 받지 않고서
+            사이즈만 잘 주면 (width/height 순서) 사진 다운로드 받을 수 있다.*/
+
+            image.width = 300;
+            image.height = 300;
+        };
+    </script>
+</head>
+
+<body>
+    <img id="image">
+</body>
+
+</html>

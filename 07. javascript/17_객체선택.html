@@ -1,0 +1,46 @@
+<!-- 이거 셀레니움 할 때 한 번씩 봤더랬지? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 선택</title>
+    <script>
+
+
+        /* 타이머를 걸어볼까요? */
+        /* window.onload */
+        window.onload = function () {
+            setTimeout(function () {
+                let h1 = document.querySelector('h1');
+                /* 제일 처음 선택된 하나만 바꿉니다. 다 바꾸려면 뒤에 All */
+                h1.style.color = 'red';
+                h1.style.border = '1px solid black';
+                let h2s = document.querySelectorAll('h2');
+                /* 대신 얘는 선택자들을 array에 묶어서 집어넣죠. */
+                /* 그러니까 반복문도 쓸 수 있는 거에요 */
+                for (let h2 of h2s) {
+                    h2.style.color = 'green';
+                    h2.style.backgroundColor = 'aliceblue';
+                    h2.innerHTML = 'From JavaScript';
+                }
+
+            }, 3000);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Title</h1>
+    <h1>Title</h1>
+    <h1>Title</h1>
+    <hr>
+    <h2>ALL</h2>
+    <h2>ALL</h2>
+    <h2>ALL</h2>
+</body>
+
+</html>

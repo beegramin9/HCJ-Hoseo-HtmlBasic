@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지 생성 순서</title>
+    <script>
+        alert('Process-0')
+    </script>
+</head>
+
+<body>
+    <h1>Process - 1</h1>
+    <script>alert('Process - 1')</script>
+    <!-- h1보다 이게 더 먼저 찍히네 -->
+
+    <h1>Process - 2</h1>
+    <script>alert('Process - 2')</script>
+</body>
+
+</html>

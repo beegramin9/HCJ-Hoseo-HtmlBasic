@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경화면 색</title>
+    <script>
+        window.onload = function () {
+            let output = '';
+            for (let i = 0; i < 256; i++) {
+                output += '<div></div>';
+            }
+            document.body.innerHTML = output;
+            /* 바디에 아무것도 없는데, output으로 빈 깡통을 채울 수 있다.*/
+            let divs = document.querySelectorAll('div');
+            for (let k = 0; k < divs.length; k++) {
+                let div = divs[k];
+                div.style.height = '2px';
+                div.style.background = `rgb(${k},${k},${k})`;
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
