@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>데이터 목록을 가진 텍스트 입력</title>
 </head>
+<!-- 
+Form: 로그인/회원가입/장바구니/글 작성 등을 할 때
+사용자가 입력한 정보를 서버에 전송하는 과정
+
+
+
+-->
 
 <body>
+    <!-- 사용자로부터의 정보를 받는 인풋 
+    Type은 정보의 Type-->
+    <table>
+        <tr>
+            <td>
+                아이디: <input type="text">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                비밀번호: <input type="password">
+            </td>
+        </tr>
+    </table>
+    <!-- 서버를 전송할 때 사용하는 버튼, type을 submit으로 해주면 됨
+    submit은 내가 따로 글자 안 써줘도 알아서 써짐 
+    어디로 전송할꺼야? 를 바로 form 태그를 쓴다. -->
+    <input type="submit">
+
+    <form action="http://localhost/login.php">
+        아이디: <input type="text" name="id">
+        비밀번호: <input type="password" name="pwd">
+        주소: <input type="password" name="address" value="서울시">
+        <!-- 서버가 들어온 데이터를 구별할 수 있게 해주는 게 name 
+        name은 query의 Key값으로 전송이 된다! 근데 메소드가 post이면 안 보이게 되겠지-->
+        <!-- value는 default값, placeholder와 같은 역할 -->
+        <input type="submit">
+    </form>
+
+
+
+
+
+    <hr>
     <h3>가보고 싶은 곳</h3>
     <hr>
     <form action="">
